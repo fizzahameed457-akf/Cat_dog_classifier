@@ -79,6 +79,6 @@ if uploaded_file is not None:
         pred = interpreter.get_tensor(output_details[0]['index'])[0][0]
 
         if pred > 0.5:
-            st.error(f"Oh, it's a cat! 🐶 (Confidence: {pred*100:.2f}%)")
+            st.error(f"Oh, it's a dog! 🐶 (Confidence: {pred*100:.2f}%)")
         else:
             st.success(f"Oh, it's a cat! 🐱 (Confidence: {(1-pred)*100:.2f}%)")
