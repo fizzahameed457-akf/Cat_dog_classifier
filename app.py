@@ -53,7 +53,7 @@ def imagenet_check(image):
 st.title("🐱 Cat or Not? 🐶")
 st.write("Upload an image and I'll tell you if it's a cat or a dog!")
 
-uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png", "heic", "webp", "bmp"])
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file).convert('RGB')
