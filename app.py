@@ -50,7 +50,7 @@ def imagenet_check(image):
                 return True, label
     return False, top5[0][1]
 
-st.title("🐱 Cat or Not? 🐶")
+st.title("🐱 Cat or Dog 🐶")
 st.write("Upload an image and I'll tell you if it's a cat or a dog!")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png", "heic", "webp", "bmp"])
