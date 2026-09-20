@@ -38,6 +38,6 @@ if uploaded_file is not None:
 
     # ---- 0 = cat, 1 = dog (matches your training) ----
     if pred > 0.5:
-        st.error(f"❌ No, it's not a cat! 🐶 (Confidence: {pred*100:.2f}%)")
+        st.error(f"No, it's not a cat! 🐶 (Confidence: {pred*100:.2f}%)")
     else:
-        st.success(f"✅ Yes, it's a cat! 🐱 (Confidence: {(1-pred)*100:.2f}%)")
+        st.success(f"Yes, it's a cat! 🐱 (Confidence: {(1-pred)*100:.2f}%)")
